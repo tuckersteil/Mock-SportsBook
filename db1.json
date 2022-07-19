@@ -1,0 +1,34 @@
+{
+  "bets": [
+    {
+      "betamount": "50",
+      "team": "Los Angeles Clippers",
+      "odds": "-110",
+      "id": 1
+    },
+    {
+      "betamount": "44",
+      "team": "Los Angeles Clippers",
+      "odds": "-110",
+      "id": 2
+    },
+    {
+      "betamount": "125",
+      "team": "Los Angeles Clippers",
+      "odds": "-110",
+      "id": 3
+    },
+    {
+      "betamount": "435",
+      "team": "Los Angeles Clippers",
+      "odds": "o 218.5",
+      "id": 4
+    },
+    {
+      "betamount": "300",
+      "team": "Sacramento Kings",
+      "odds": "-110",
+      "id": 5
+    }
+  ]
+}
