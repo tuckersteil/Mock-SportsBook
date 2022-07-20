@@ -29,6 +29,24 @@
       "team": "Sacramento Kings",
       "odds": "-110",
       "id": 5
+    },
+    {
+      "betamount": "200",
+      "team": "Los Angeles Lakers",
+      "odds": "o 224.5",
+      "id": 6
+    },
+    {
+      "betamount": "200",
+      "team": "Los Angeles Lakers",
+      "odds": "o 224.5",
+      "id": 7
+    },
+    {
+      "betamount": "500",
+      "team": "Los Angeles Lakers",
+      "odds": "-220",
+      "id": 8
     }
   ]
 }

@@ -18,7 +18,7 @@ function BetSlip({betSlipData, betData}){
       console.log(betFormData)
 
       function handleSubmit(event){
-        event.preventDefault();
+        //event.preventDefault();
         const submitBet = {
             betamount: betFormData.betAmount,
             team:betSlipData.team,
