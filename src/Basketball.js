@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import BetSlip from "./BetSlip";
 
 function Basketball({nba, getBetData}){
     console.log(nba)

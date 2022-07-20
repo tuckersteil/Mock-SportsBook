@@ -49,7 +49,7 @@ function App() {
     setBetSlipGame(game)
     setBetData(e.target.innerText)
   }
-  
+
 
   return (
     <div >
@@ -73,8 +73,8 @@ function App() {
         </Route>
         <Route exact path="/baseball">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
-          <Baseball mlb={mlb}/>
-          <BetSlip/>
+          <Baseball mlb={mlb} getBetData={getBetData}/>
+          <BetSlip betSlipData={betSlipGame} betData={betData}/>
         </Route>
         <Route exact path="/football">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>

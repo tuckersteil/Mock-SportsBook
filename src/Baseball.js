@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 
-function Baseball({mlb}){  
+function Baseball({mlb, getBetData}){  
 
-    function handleclick(e){
-        console.log(e)
+    function handleclick(game, e){
+        getBetData(game, e)
     }
 
     return (
@@ -22,15 +22,15 @@ function Baseball({mlb}){
                 <tbody key={id}>
                     <tr>
                         <th>{game.homeTeam.team}</th>
-                        <td><button>{game.homeTeam.spread}</button></td>
-                        <td><button>{game.homeTeam.moneyline}</button></td>
-                        <td><button>{game.homeTeam.overunder}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.homeTeam, e)}>{game.homeTeam.spread}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.homeTeam, e)}>{game.homeTeam.moneyline}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.homeTeam, e)}>{game.homeTeam.over}</button></td>
                     </tr>
                     <tr>
                         <th>{game.awayTeam.team}</th>
-                        <td><button>{game.awayTeam.spread}</button></td>
-                        <td><button>{game.awayTeam.moneyline}</button></td>
-                        <td><button>{game.awayTeam.overunder}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.awayTeam, e)}>{game.awayTeam.spread}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.awayTeam, e)}>{game.awayTeam.moneyline}</button></td>
+                        <td><button onClick={(e)=>handleclick(game.awayTeam, e)}>{game.awayTeam.under}</button></td>
                     </tr>
                     <tr id="blank">
                         <th>{}</th>
