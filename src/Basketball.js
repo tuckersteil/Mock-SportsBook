@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 function Basketball({nba, getBetData}){
     console.log(nba)

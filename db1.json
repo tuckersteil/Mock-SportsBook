@@ -1,58 +1,5 @@
 {
   "bets": [
-    {
-      "betamount": "50",
-      "team": "Los Angeles Clippers",
-      "odds": "-110",
-      "id": 1
-    },
-    {
-      "betamount": "44",
-      "team": "Los Angeles Clippers",
-      "odds": "-110",
-      "id": 2
-    },
-    {
-      "betamount": "125",
-      "team": "Los Angeles Clippers",
-      "odds": "-110",
-      "id": 3
-    },
-    {
-      "betamount": "435",
-      "team": "Los Angeles Clippers",
-      "odds": "o 218.5",
-      "id": 4
-    },
-    {
-      "betamount": "300",
-      "team": "Sacramento Kings",
-      "odds": "-110",
-      "id": 5
-    },
-    {
-      "betamount": "200",
-      "team": "Los Angeles Lakers",
-      "odds": "o 224.5",
-      "id": 6
-    },
-    {
-      "betamount": "200",
-      "team": "Los Angeles Lakers",
-      "odds": "o 224.5",
-      "id": 7
-    },
-    {
-      "betamount": "500",
-      "team": "Los Angeles Lakers",
-      "odds": "-220",
-      "id": 8
-    },
-    {
-      "betamount": "3333",
-      "team": "Oakland A's",
-      "odds": "-110",
-      "id": 9
-    }
+    
   ]
 }

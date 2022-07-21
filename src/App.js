@@ -15,6 +15,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [betSlipGame, setBetSlipGame] = useState([]);
   const [betData, setBetData] = useState([]);
+  const [userLogin, setUserLogin]= useState([])
 
   const [nba, setNba]=useState([])
   const [mlb, setMlb]=useState([])
@@ -55,7 +56,7 @@ function App() {
     <div >
       <Switch>
         <Route exact path="/login">
-          <Login setIsLoggedIn={setIsLoggedIn} />
+          <Login setIsLoggedIn={setIsLoggedIn} setUserLogin={setUserLogin}/>
         </Route>
         <Route exact path="/">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
@@ -63,23 +64,23 @@ function App() {
         </Route>
         <Route exact path="/pending">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
-          <Pending/>
+          <Pending userLogin={userLogin}/>
         </Route>
 
         <Route exact path="/basketball">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
           <Basketball nba={nba} getBetData={getBetData}/>
-          <BetSlip betSlipData={betSlipGame} betData={betData}/>
+          <BetSlip betSlipData={betSlipGame} betData={betData} resetBetSlip={setBetSlipGame} setBetData={setBetData}/>
         </Route>
         <Route exact path="/baseball">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
           <Baseball mlb={mlb} getBetData={getBetData}/>
-          <BetSlip betSlipData={betSlipGame} betData={betData}/>
+          <BetSlip betSlipData={betSlipGame} betData={betData} resetBetSlip={setBetSlipGame} setBetData={setBetData}/>
         </Route>
         <Route exact path="/football">
           <Navbar setIsLoggedIn={setIsLoggedIn}/>
-          <Football nfl={nfl}/>
-          <BetSlip/>
+          <Football nfl={nfl} getBetData={getBetData}/>
+          <BetSlip betSlipData={betSlipGame} betData={betData} resetBetSlip={setBetSlipGame} setBetData={setBetData}/>
         </Route>
       </Switch>
     </div>

@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
-function BetSlip({betSlipData, betData}){
+function BetSlip({betSlipData, betData, resetBetSlip, setBetData}){
     console.log(betSlipData, betData)
+    
     const [betFormData, setBetFormData] = useState({
         betAmount: ""
     })
-    
     const betSlipStyle={
         width: "325px"
     }
@@ -15,14 +15,16 @@ function BetSlip({betSlipData, betData}){
           [event.target.name]: event.target.value,
         });
       }
-      console.log(betFormData)
-
+      //betData=== betSlipData.spread||betSlipData.over||betSlipData.under?"-110": betData
       function handleSubmit(event){
-        //event.preventDefault();
+        event.preventDefault();
+        console.log(betSlipData.over, betSlipData.under)
+        
         const submitBet = {
             betamount: betFormData.betAmount,
             team:betSlipData.team,
-            odds: betData=== betSlipData.spread||betSlipData.overunder?"-110": betData
+            line: betData,
+            odds: betData=== betSlipData.moneyline? betData: "-110"
         }
         console.log(submitBet)
         fetch("http://localhost:3002/bets", {
@@ -34,9 +36,11 @@ function BetSlip({betSlipData, betData}){
         })
         .then((r)=> r.json())
         .then((placeBet)=> console.log(placeBet))
+        resetBetSlip([])
+        setBetData([])
+        setBetFormData({betAmount: ""})
       }
-    //const trying =  betData===betSlipData.moneyline? null:<h3>Line: {betData}</h3>
-//<h3>Odds:{betData=== betSlipData.spread||betSlipData.overunder?"-110": betData}</h3>
+    
 const juice = "-110"
 return (
     <div id="mydiv"style={betSlipStyle} >

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-function Login({ setIsLoggedIn }) {
+function Login({ setIsLoggedIn, setUserLogin }) {
   const history = useHistory();
   const [formData, setFormData] = useState({
     username: "",
@@ -19,7 +19,7 @@ function Login({ setIsLoggedIn }) {
     e.preventDefault();
 
     setIsLoggedIn(true);
-
+    setUserLogin(formData)
     
     history.push("/");
   }
