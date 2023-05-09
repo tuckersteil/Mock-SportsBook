@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mock-SportsBook/static/css/main.015044cd.css",
+    "main.js": "/Mock-SportsBook/static/js/main.ff3a03fb.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Mock-SportsBook/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Mock-SportsBook/index.html",
+    "main.015044cd.css.map": "/Mock-SportsBook/static/css/main.015044cd.css.map",
+    "main.ff3a03fb.js.map": "/Mock-SportsBook/static/js/main.ff3a03fb.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Mock-SportsBook/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.015044cd.css",
+    "static/js/main.ff3a03fb.js"
+  ]
+}
