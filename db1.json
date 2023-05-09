@@ -20,6 +20,13 @@
       "line": "-250",
       "odds": "-250",
       "id": 3
+    },
+    {
+      "betamount": "500",
+      "team": "Sacramento Kings",
+      "line": "+200",
+      "odds": "+200",
+      "id": 4
     }
   ]
 }
