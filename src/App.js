@@ -22,7 +22,7 @@ function App() {
   const [nfl, setNfl]=useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3001/sports")
+        fetch("https://bet-slip.onrender.com/sports")
         .then((r) => r.json())
         .then((sports)=> {
           getBaseball(sports)
